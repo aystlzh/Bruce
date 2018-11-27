@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3664914283C60E0DF03C590 /* libPods-MetaData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFE94B62E86D41E7D24A641 /* libPods-MetaData.a */; };
 		D186565C21A05B08000DF15E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D186565B21A05B08000DF15E /* AppDelegate.m */; };
 		D186565F21A05B08000DF15E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D186565E21A05B08000DF15E /* ViewController.m */; };
 		D186566221A05B08000DF15E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D186566021A05B08000DF15E /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7E6D867618BAE8368E5166 /* Pods-MetaData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaData.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaData/Pods-MetaData.release.xcconfig"; sourceTree = "<group>"; };
+		9D7C79BCFDE19E9AF4DC9229 /* Pods-MetaData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaData/Pods-MetaData.debug.xcconfig"; sourceTree = "<group>"; };
 		D186565721A05B08000DF15E /* MetaData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D186565A21A05B08000DF15E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D186565B21A05B08000DF15E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		D186567A21A05B0A000DF15E /* MetaDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D186567E21A05B0A000DF15E /* MetaDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaDataUITests.m; sourceTree = "<group>"; };
 		D186568021A05B0A000DF15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFE94B62E86D41E7D24A641 /* libPods-MetaData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3664914283C60E0DF03C590 /* libPods-MetaData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81C80CCED1178CBAE0D0B1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE94B62E86D41E7D24A641 /* libPods-MetaData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C172F1B3905CB269EDCF8E7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D7C79BCFDE19E9AF4DC9229 /* Pods-MetaData.debug.xcconfig */,
+				3D7E6D867618BAE8368E5166 /* Pods-MetaData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D186564E21A05B08000DF15E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				D186567221A05B0A000DF15E /* MetaDataTests */,
 				D186567D21A05B0A000DF15E /* MetaDataUITests */,
 				D186565821A05B08000DF15E /* Products */,
+				C172F1B3905CB269EDCF8E7A /* Pods */,
+				81C80CCED1178CBAE0D0B1DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D186568321A05B0A000DF15E /* Build configuration list for PBXNativeTarget "MetaData" */;
 			buildPhases = (
+				2E2352F00405276CE6564A12 /* [CP] Check Pods Manifest.lock */,
 				D186565321A05B08000DF15E /* Sources */,
 				D186565421A05B08000DF15E /* Frameworks */,
 				D186565521A05B08000DF15E /* Resources */,
+				767981BB6C918A1B5F3E1610 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E2352F00405276CE6564A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		767981BB6C918A1B5F3E1610 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MetaData/Pods-MetaData-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetaData/Pods-MetaData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D186565321A05B08000DF15E /* Sources */ = {
@@ -433,6 +506,7 @@
 		};
 		D186568421A05B0A000DF15E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7C79BCFDE19E9AF4DC9229 /* Pods-MetaData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -452,6 +526,7 @@
 		};
 		D186568521A05B0A000DF15E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7E6D867618BAE8368E5166 /* Pods-MetaData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

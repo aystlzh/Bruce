@@ -2,7 +2,7 @@ platform :ios, ‘9.0’
 #use_frameworks!
 
 target “MetaData” do
-   
+    pod 'AFNetworking'
     pod 'SVProgressHUD', '~> 2.0.3'
        
 end
