@@ -125,15 +125,12 @@
 		D186565921A05B08000DF15E /* MetaData */ = {
 			isa = PBXGroup;
 			children = (
-				D186565A21A05B08000DF15E /* AppDelegate.h */,
-				D186565B21A05B08000DF15E /* AppDelegate.m */,
-				D186565D21A05B08000DF15E /* ViewController.h */,
-				D186565E21A05B08000DF15E /* ViewController.m */,
-				D186566021A05B08000DF15E /* Main.storyboard */,
-				D186566321A05B09000DF15E /* Assets.xcassets */,
-				D186566521A05B09000DF15E /* LaunchScreen.storyboard */,
-				D186566821A05B09000DF15E /* Info.plist */,
-				D186566921A05B09000DF15E /* main.m */,
+				D1D01A9F21AD41DE00F62AA3 /* Util */,
+				D1D01A9E21AD415D00F62AA3 /* Vender */,
+				D1D01AA321AD437C00F62AA3 /* Application */,
+				D1D01A9B21AD40D700F62AA3 /* GUI */,
+				D1D01A9C21AD410200F62AA3 /* Resources */,
+				D1D01A9D21AD411400F62AA3 /* SupportFile */,
 			);
 			path = MetaData;
 			sourceTree = "<group>";
@@ -154,6 +151,57 @@
 				D186568021A05B0A000DF15E /* Info.plist */,
 			);
 			path = MetaDataUITests;
+			sourceTree = "<group>";
+		};
+		D1D01A9B21AD40D700F62AA3 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				D186566521A05B09000DF15E /* LaunchScreen.storyboard */,
+				D186566021A05B08000DF15E /* Main.storyboard */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		D1D01A9C21AD410200F62AA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D186566321A05B09000DF15E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1D01A9D21AD411400F62AA3 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				D186566821A05B09000DF15E /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		D1D01A9E21AD415D00F62AA3 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		D1D01A9F21AD41DE00F62AA3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D1D01AA321AD437C00F62AA3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D186566921A05B09000DF15E /* main.m */,
+				D186565D21A05B08000DF15E /* ViewController.h */,
+				D186565A21A05B08000DF15E /* AppDelegate.h */,
+				D186565E21A05B08000DF15E /* ViewController.m */,
+				D186565B21A05B08000DF15E /* AppDelegate.m */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
